@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dan McLaughlin | Percussionist</title>
+        <meta name="viewport" content="width-device-width, initial scale=1.0">
+        
+        <link rel="stylesheet" href="normalize.css">        
+        <link href='https://fonts.googleapis.com/css?family=Ultra|Lusitana' rel='stylesheet' type='text/css'>
+        
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="mejs/mediaelement-and-player.min.js"></script>
+        <link rel="stylesheet" href="mejs/mediaelementplayer.min.css">
+        
+        <link rel="stylesheet" href="main.css">
+        <!--custom skin can go here-->
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="headline">
+                <h1>Dan McLaughlin</h1>
+                <h2>Percussionist</h2>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="repertoire.html">Repertoire</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <section class="center">
+                <h3><span class="italicize">Kim</span> - Askell Masson</h3>
+                <video controls preload="none">
+                    <source src="assets/MassonKim.mp4" type="video/mp4">
+                </video> 
+            </section>
+            <section class="center">
+                <h3><span class="italicize">Concerto for Vibraphone </span> (I) - Ney Rosauro</h3>
+                <audio controls preload="none">
+                    <source src="assets/RosauroVibe.ogg" type="audio/ogg">
+                </audio>
+            </section>
+            <footer>
+                <p>&copy; 2016 Dan McLaughlin</p>
+            </footer>
+        </div>
+        <script>
+            $('audio,video').mediaelementplayer({
+                success: function(player, node) {
+                    $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+                },
+                startLanguage: 'en',
+                translationSelector: true
+            });
+        </script>
+    </body>
+</html>

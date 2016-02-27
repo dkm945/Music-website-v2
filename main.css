@@ -1,0 +1,267 @@
+/**********
+VARIOUS CROSS-SITE ITEMS
+**********/
+
+span.italicize {
+    font-style: italic; 
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10%;
+    font-family: 'Lusitana', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #564F63;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+/**********
+HEADER/NAVIGATION
+**********/
+
+.headline {
+    text-align: center;
+    font-family: 'Ultra', serif;
+}
+
+header {
+    background: #E7E9BB; /* for older browsers */
+    background: -moz-radial-gradient(#B0AABB, #E7E9BB) repeat scroll 0% 0% transparent;
+    background: radial-gradient(#B0AABB, #E7E9BB);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    font-family: 'Ultra', serif;
+    margin: auto 2em auto auto;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: auto .35em 1em auto;
+}
+
+
+/**********
+FOOTER
+**********/
+
+footer {
+    text-align: center;
+    padding-top: 2em;
+    font-size: 0.8em
+}
+
+
+/**********
+INDEX/ABOUT
+**********/
+
+.profile-picture {
+    display: block;
+    margin: 2em auto;
+    border-radius: 5%;
+}
+
+
+/**********
+REPERTOIRE
+**********/
+
+table {
+    margin: 1em auto auto;
+    box-shadow: 0 0 0.3em 0.2em #B0AABB, 0 0 0.3em 0.5em #E7E9BB;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto auto 0.6em;
+}
+
+thead th {
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+
+tr, td, th{
+    border: 1px solid #000;
+    padding: 0.1em;
+    text-align: center;
+}
+
+tfoot td {
+    padding: 10px 2px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+/**********
+MEDIA
+**********/
+
+.center {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+video, audio {
+    width:100%; 
+    max-width: 640px; 
+    height:auto !important;
+}
+
+.mejs-container {
+    max-width: 640px;
+    max-height: 360px;
+}
+
+
+
+/**********
+CONTACT
+**********/
+
+section ul {
+    list-style: none;
+    text-align: center;
+}
+
+section li {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 2%;
+}
+
+.social-icon {
+    width: 4em;
+    height: 4em;
+}
+
+.contact-blurb {
+    margin: 3em auto 1em
+}
+
+label, select {
+    margin: auto auto auto 1em;
+}
+
+input {
+    margin: .5em 6em .5em .5em;
+}
+    
+textarea {
+    margin: 1em auto auto 4.5em;
+}
+
+button {
+    margin: 5% 20% 5% 45%;
+    color: #564F63;
+    background: #E7E9BB;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+@media screen and (min-width: 550px) {
+    
+    /**********
+    CONTACT
+    **********/
+    
+    input {
+        display: inline-block;
+        margin: .5em 0em .5em .5em;
+    }  
+    
+    button {
+        margin-left: 48%;
+    }    
+}
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    
+    /**********
+    HEADER/NAVIGATION
+    **********/
+    
+    .headline {
+        text-align: left;
+        margin-left: 5%;
+        width: 35%;
+    }
+    
+    nav {
+        text-align: right;
+        position: absolute;
+        top: 3em;
+        right: 0em;
+        margin-left: 45%;
+        font-size: 1.2em;
+    }
+    
+    
+    /**********
+    FOOTER
+    **********/
+    
+    footer {
+        clear: both;
+    }
+    
+    
+    /**********
+    INDEX/ABOUT
+    **********/
+    
+    .profile-picture {
+        width: 30%;
+        float: left;
+    }
+    
+    .bio {
+        width: 50%;
+        position: absolute;
+        top: 15em;
+        right: 5em;        
+    }    
+    
+    
+    /**********
+    CONTACT
+    **********/
+    
+    fieldset {
+        text-align: center;
+    }    
+}
+
+
+
+
+
+
+
+
+
